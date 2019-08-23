@@ -16,7 +16,9 @@ tests the behavior of small, independent units of code, which are the smallest c
 the terminal window.  With Mocha, you can use the command line argument "mocha" to look for and execute a test. 
 
 ## What are test suites and test cases in Mocha?
-Mocha provides structure by using keywords like "describe" and "it", that batch into *test suites* and *test cases*. 
+Mocha provides structure by using keywords like "describe" and "it", that batch into *test suites* and *test cases*. **Test suites** are a collection
+of tests all realating to a single functionality or behavior.  **Test cases** is a singular description about the desired behavior of a peice of code
+that will either *pass* or *fail*.
 
  
 
