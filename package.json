@@ -12,5 +12,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "diff": "^4.0.1"
   }
 }
