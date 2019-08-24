@@ -96,15 +96,17 @@ should see the following below.  Note that the test will show "pending" because 
 
 
 ## What is Chai and how do you use in it conjunction with Mocha?
-**Chai** is an assertion library that you can use along side Mocha.  It provides functiond and methods that help compre the output of certain tests with the expected values
-you stipulate in your tests.  Chai is provides extremely clear syntax that will help you in unit testing as well.
+**Chai** is a "test expectation" library that helps you make assertions (thus you can call it an *assertion library* about code behavior in conjunction with Mocha.  It provides functiond and methods that help compre the output of certain tests with the expected valuesyou stipulate in your tests.  Chai is provides extremely clear syntax that will help you in unit testing as well.
 
+<br>
 
 ### STEP 5: Install the chai dependency
 Same process as sintalling the Mocha dependency in your package.json file, simply install the library using npm.
 ```
     npm install chai --save-dev
 ```
+
+<br>
 
 ### STEP 6: Require chai in your test file
 With chai, we want to require chai so that we can utilize it in our test file.
@@ -117,5 +119,20 @@ With chai, we want to require chai so that we can utilize it in our test file.
     });
 ```
 
-### STEP 7: 
+<br>
+
+### STEP 7: Use "expect" to test the code inside your unit tests
+In each test suite (i.e. describe), inside each unit test (i.e. it), and inside the callback function you add to *it* unit tests, you can use chai test the code for your unit test. In the example below, we want to test whether or not 1 and 1 are equal (rememeber, our subject to test is a function that takes 2 arguments that are compared via strict equality). Then, we simply chain together the *getters* to create and execute the assertion.
+
+In the example below, we are testing "isEqual" with two test numbers, 2 and 2, which should be true.
+```JavaScript
+    const isEqual = require('../isEqual');
+    const expect = require('chai');                  
+
+    describe('isEqual', function() {
+        it('should give right answers for equal and unequal inputs', function() {
+            expect(isEqual(2,2).to.be.true)
+        });
+    });
+```
 
