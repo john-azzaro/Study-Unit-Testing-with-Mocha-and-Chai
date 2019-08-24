@@ -5,7 +5,7 @@
 ## What is Unit Testing with Mocha and Chai Study?
 "Unit Testing with Mocha and Chai Study" is an exploration of unit testing using the Mocha framework and Chai assertion library.  
 
-## What are software and unit tests?
+## Mocha in context: What are software and unit tests?
 A *software test* is a routine that runs the subject under test (i.e. the testing code) and determines if the code tested conforms to 
 expectations.  You want to include tests in all of your projects because it servers as documentation that illustrates the way code should
 be used and provides a quick way to check if any new features that have been added break your existing code (i.e. regression). A *unit test* 
@@ -21,15 +21,28 @@ of tests all realating to a single functionality or behavior.  **Test cases** is
 that will either *pass* or *fail*.
 
 ## How do you install Mocha?
-In your project file (assuming you have already run npm init), install mocha to your development environment
+
+###STEP 1: Installing Mocha
+In your project file (assuming you have already run "npm init"), install mocha to your development environment:
 ```
-npm install moch --save-dav
+    npm install mocha --save-dav
 ```
-Additionally, you want to add the line of code below with will allow you to run tests in Gitbash with a single command:
+Additionally, you want to add the line of code in you package.json file which will allow you to run tests in Gitbash with a single command:
 ```
     "scripts": {
             "test":"mocha --exit"   
-        }
+    }
 ```
+
+###STEP 2: Create a "test" file
+This folder will hold all the test suites we want to run for our project.  
+```
+    test
+```
+Important conventions to remember when creating individual test files in your test folder:
+* Each file should begin with "test-".
+* Use dashes between each word (i.e. test-adding-code).
+* The name of the file should be all lowercase.
+
 
 
