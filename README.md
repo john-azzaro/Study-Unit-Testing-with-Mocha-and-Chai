@@ -44,12 +44,20 @@ Important conventions to remember when creating individual test files in your te
 * Use dashes between each word (i.e. test-adding-code).
 * The name of the file should be all lowercase.
 
-##How do you setup a software test?
-
-### STEP 3: Load the subject under test to your test file
-This would simply involve you loading whatever JavaScript file you wanted to test to this test module.
+### STEP 3: Load the "subject under test" to your test file
+The "subject under test" is simply the code/JavaScript file you want to test in this module.  For example, suppose you want to test
+a function whose prupose is to do a strict comparison of two numbers.  Also note that we need to export that module so that it can be used 
 ```JavaScript
-    const addItUp = require('../addItUp');
+    function isEqual(a, b) {
+        return a === b;
+    }
+
+    module.exports = isEqual 
+```
+To load the subject under 
+
+```JavaScript
+    const addItUp = require('../isEqual');
 ```
 
 ### STEP 4: 
