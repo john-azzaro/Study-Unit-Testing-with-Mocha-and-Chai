@@ -20,7 +20,12 @@ Mocha provides structure by using keywords like "describe" and "it", that batch 
 of tests all realating to a single functionality or behavior.  **Test cases** is a singular description about the desired behavior of a peice of code
 that will either *pass* or *fail*.
 
- 
+## How do you install Mocha?
+In your project file (assuming you have already run npm init), install mocha to your development environment
+```
+npm install moch --save-dav
+```
+Additionally, you want to add the line of code below with will allow you to run tests in Gitbash with a single command:
 
 
 
