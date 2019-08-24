@@ -20,7 +20,7 @@ Mocha provides structure by using keywords like "describe" and "it", that batch 
 of tests all realating to a single functionality or behavior.  **Test cases** is a singular description about the desired behavior of a peice of code
 that will either *pass* or *fail*.
 
-## How do you install Mocha?
+## How do you install Mocha and setup tests?
 
 ### STEP 1: Installing Mocha
 In your project file (assuming you have already run "npm init"), install mocha to your development environment:
@@ -54,12 +54,23 @@ a function whose prupose is to do a strict comparison of two numbers.  Also note
 
     module.exports = isEqual 
 ```
-To load the subject under 
-
+To load the "subject under test", in your test file (e.g. test-isequal) require the file you wish to test.  Also note the ".." in "../isEqual" which
+is the root location of the project folder.
 ```JavaScript
-    const addItUp = require('../isEqual');
+    const isequal = require('../isEqual');
 ```
 
-### STEP 4: 
+### STEP 4: Create a test suite with "describe" and "it" for behaviors to test
+To create a test suite, use *describe* to group all of your tests together, which take a string and a callback function.  Inside the *describe* test suite, you 
+can have one or more *it* test cases, which also has a string value and a callback function with the respective test for the behavior.  Note that within the test suite,
+can nest as many test units as you wish.
+```JavaScript
+     describe('isEqual', function() {
+            it('should give right answers for equal and unequal inputs')
+
+        });
+```
+
+
 
 
