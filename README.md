@@ -20,7 +20,7 @@ Mocha provides structure by using keywords like "describe" and "it", that batch 
 of tests all realating to a single functionality or behavior.  **Test cases** is a singular description about the desired behavior of a peice of code
 that will either *pass* or *fail*.
 
-## How do you install Mocha and setup tests?
+## How do you install Mocha and use Mocha?
 
 ### STEP 1: Installing Mocha
 In your project file (assuming you have already run "npm init"), install mocha to your development environment:
@@ -48,7 +48,7 @@ Important conventions to remember when creating individual test files in your te
 
 <br>
 
-### STEP 3: Load the "subject under test" to your test file
+### STEP 3: Load the subject under test to your test file
 The "subject under test" is simply the code/JavaScript file you want to test in this module.  For example, suppose you want to test
 a function whose prupose is to do a strict comparison of two numbers.  Also note that we need to export that module so that it can be used 
 ```JavaScript
@@ -58,10 +58,10 @@ a function whose prupose is to do a strict comparison of two numbers.  Also note
 
     module.exports = isEqual 
 ```
-To load the "subject under test", in your test file (e.g. test-isequal) require the file you wish to test.  Also note the ".." in "../isEqual" which
+To load the subject under test, in your test file (e.g. test-isequal) require the file you wish to test.  Also note the ".." in "../isEqual" which
 is the root location of the project folder.
 ```JavaScript
-    const isequal = require('../isEqual');
+    const isEqual = require('../isEqual');
 ```
 
 <br>
@@ -73,9 +73,24 @@ can nest as many test units as you wish.
 ```JavaScript
      describe('isEqual', function() {
             it('should give right answers for equal and unequal inputs')
-
         });
 ```
+To test this out, run ```npm test``` (remember, we added a script to our package.json file to run "mocha  --exit" with this line). If you setup your test correctly, you
+should see the following:
+```
+    $ npm test                                                              <== when you run "npm test"...
+
+    > mocha-demo-2@1.0.0 test C:\Users\Admin\Desktop\mocha-demo             <== mocha-demo (i.e. the test folder)...
+    > mocha --exit                                                          <== ... runs mocha --exit (i.e. the script for "test")
+
+    isEqual                                                                 <== name of the function being tested...
+        - should give right answers for equal and unequal inputs            <== first argument is a string value indicating the behavior to be tested in that block.
+
+    0 passing (9ms)
+    1 pending                                                               <== Test is pending because we have not supplied a callback function.
+
+```
+
 
 <br>
 
