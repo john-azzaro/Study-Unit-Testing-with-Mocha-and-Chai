@@ -76,7 +76,7 @@ can nest as many test units as you wish.
         });
 ```
 To test this out, run ```npm test``` (remember, we added a script to our package.json file to run "mocha  --exit" with this line). If you setup your test correctly, you
-should see the following:
+should see the following below.  Note that the test will show "pending" because a callback function has not been supplied yet.  This is where the chai assertion library comes in.
 ```
     $ npm test                                                              <== when you run "npm test"...
 
@@ -95,4 +95,27 @@ should see the following:
 <br>
 
 
+## What is Chai and how do you use in it conjunction with Mocha?
+**Chai** is an assertion library that you can use along side Mocha.  It provides functiond and methods that help compre the output of certain tests with the expected values
+you stipulate in your tests.  Chai is provides extremely clear syntax that will help you in unit testing as well.
+
+
+### STEP 5: Install the chai dependency
+Same process as sintalling the Mocha dependency in your package.json file, simply install the library using npm.
+```
+    npm install chai --save-dev
+```
+
+### STEP 6: Require chai in your test file
+With chai, we want to require chai so that we can utilize it in our test file.
+```JavaScript
+    const isEqual = require('../isEqual');
+    const expect = require('chai');                  // load chai
+
+    describe('isEqual', function() {
+        it('should give right answers for equal and unequal inputs')
+    });
+```
+
+### STEP 7: 
 
