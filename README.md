@@ -22,7 +22,7 @@ that will either *pass* or *fail*.
 
 ## How do you install Mocha?
 
-#### STEP 1: Installing Mocha
+### STEP 1: Installing Mocha
 In your project file (assuming you have already run "npm init"), install mocha to your development environment:
 ```
     npm install mocha --save-dav
@@ -34,7 +34,7 @@ Additionally, you want to add the line of code in you package.json file which wi
     }
 ```
 
-#### STEP 2: Create a "test" file
+### STEP 2: Create a "test" file
 This folder will hold all the test suites we want to run for our project.  
 ```
     test
@@ -43,6 +43,13 @@ Important conventions to remember when creating individual test files in your te
 * Each file should begin with "test-".
 * Use dashes between each word (i.e. test-adding-code).
 * The name of the file should be all lowercase.
+
+### STEP 3: Load the subject under test to your test file
+This would simply involve you loading whatever JavaScript file you wanted to test to this test module.
+```JavaScript
+    const addItUp = require('../addItUp');
+```
+
 
 
 
