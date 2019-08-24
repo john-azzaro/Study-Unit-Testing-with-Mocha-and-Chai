@@ -33,7 +33,7 @@ Additionally, you want to add the line of code in you package.json file which wi
             "test":"mocha --exit"   
     }
 ```
-
+<br>
 ### STEP 2: Create a "test" file
 This folder will hold all the test suites we want to run for our project.  
 ```
@@ -43,7 +43,7 @@ Important conventions to remember when creating individual test files in your te
 * Each file should begin with "test-".
 * Use dashes between each word (i.e. test-adding-code).
 * The name of the file should be all lowercase.
-
+<br>
 ### STEP 3: Load the "subject under test" to your test file
 The "subject under test" is simply the code/JavaScript file you want to test in this module.  For example, suppose you want to test
 a function whose prupose is to do a strict comparison of two numbers.  Also note that we need to export that module so that it can be used 
@@ -59,7 +59,7 @@ is the root location of the project folder.
 ```JavaScript
     const isequal = require('../isEqual');
 ```
-
+<br>
 ### STEP 4: Create a test suite with "describe" and "it" for behaviors to test
 To create a test suite, use *describe* to group all of your tests together, which take a string and a callback function.  Inside the *describe* test suite, you 
 can have one or more *it* test cases, which also has a string value and a callback function with the respective test for the behavior.  Note that within the test suite,
@@ -70,7 +70,7 @@ can nest as many test units as you wish.
 
         });
 ```
-
+<br>
 
 
 
