@@ -26,7 +26,10 @@ In your project file (assuming you have already run npm init), install mocha to 
 npm install moch --save-dav
 ```
 Additionally, you want to add the line of code below with will allow you to run tests in Gitbash with a single command:
+```
+    "scripts": {
+            "test":"mocha --exit"   
+        }
+```
 
 
-
-When you say **unit testing**, it means that you are testing the behavior of code in small
