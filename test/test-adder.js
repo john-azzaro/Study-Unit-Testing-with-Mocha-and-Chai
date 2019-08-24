@@ -1,38 +1,28 @@
-// import chai, declare expect variable
-const expect = require('chai').expect;
+const expect = require('chai').expect;                                  // import chai and declare as the "expect" variable.
 
-// import adder
-const adder = require('../adder');
+const adder = require('../adder');                                      // import adder and delcare as the "adder" variable.
 
-// unit tests for our `adder` function
-describe('adder', function() {
-
-  // test the normal case
-  it('should add two numbers', function() {
-    // range of normal inputs, including
-    // notable cases like negative answers
-    const normalCases = [
-      {a: 2, b: 3, expected: 5},
+describe('adder', function() {                                          // The test suite for the adder function includes the following tests...
+  it('should add two numbers', function() {                             // Testing the normal cases...
+    const normalCases = [        
+      {a: 2, b: 3, expected: 5},                                          // such as 2 + 3 and the "expected" result is 5 and so on for each item in this array.
       {a: 200, b: 2000, expected: 2200},
       {a: 2, b: -5, expected: -3}
-    ];
-    // for each set of inputs (a, b), `adder` should
-    // produce the expected value
-    normalCases.forEach(function(input) {
+    ];         
+
+    normalCases.forEach(function(input) {                                  // for each set of inputs (a,b), 'adder' should produce the expected results.
       const answer = adder(input.a, input.b);
       expect(answer).to.equal(input.expected);
     });
   });
 
-  it('should raise error if args not numbers', function() {
-    // range of bad inputs where not both are numbers
+  it('should raise error if args not numbers', function() {              // and for bad inputs (our edge cases) such as those that are not inputs...
     const badInputs = [
       ['a', 1],
       ['1', 2],
       [2, false]
     ];
-    // prove that an error is raised for bad inputs
-    badInputs.forEach(function(input) {
+    badInputs.forEach(function(input) {                                   // an error is raised for those bas inputs.           
       expect(function() {
         adder(input[0], input[1]);
       }).to.throw(Error);
