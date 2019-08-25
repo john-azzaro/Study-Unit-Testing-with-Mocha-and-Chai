@@ -5,7 +5,7 @@
 * [What is Mocha?](#What-is-Mocha)
 * [How do you install Mocha and use Mocha?](#How-do-you-install-Mocha-and-use-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1-Installing-Mocha)
-   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
+   * [STEP 2: Create a "test" file](#STEP-2-Create-a-"test"-file)
    * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
 
