@@ -1,10 +1,10 @@
 # Unit Testing with Mocha and Chai Study
 
 * [What is Unit Testing with Mocha and Chai Study?](#What-is-Unit-Testing-with-Mocha-and-Chai-Study)
-* [Mocha in context: What are software test and why use them?](#Mocha-in-context:-What-are-software-test-and-why-use-them)
+* [What are software tests and why use them?](#What-are-software-tests-and-why-use-them)
 * [What is Mocha?](#What-is-Mocha)
 * [How do you install Mocha and use Mocha?](#How-do-you-install-Mocha-and-use-Mocha)
-   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
+   * [STEP 1: Installing Mocha](#STEP-1-Installing-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
@@ -18,7 +18,7 @@ studies.  The first is a simple unit test example which tests a simple adder fun
 a simplified unit test.  The second example deals with a more expanded test involving a "fizzbuzzer" function that replaces strings of text for numerical values 
 and features edge case testing as well.
 
-## Mocha in context: What are software test and why use them?
+## What are software tests and why use them?
 A *software test* is a routine that runs the subject under test (i.e. the testing code) and determines if the code tested conforms to 
 expectations.  You want to include tests in all of your projects because it serves as documentation that illustrates the way code *should*
 be used and provides a quick way to check if any new features that have been added break your existing code (i.e. regression).
