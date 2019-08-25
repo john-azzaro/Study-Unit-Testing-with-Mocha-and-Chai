@@ -1,7 +1,7 @@
 # Unit Testing with Mocha and Chai Study
 
 * [Git Bash Checklist](#Git-Bash-Checklist)
-   * [What is Mocha?](#What-is-Mocha?)
+   * [What is Mocha?](#What-is-Mocha)
 
 
 <br>
