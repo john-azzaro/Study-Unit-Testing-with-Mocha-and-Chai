@@ -17,10 +17,7 @@
 <br>
 
 ## What is Unit Testing with Mocha and Chai Study?
-"Unit Testing with Mocha and Chai Study" is an exploration of testing software using the Mocha framework and Chai assertion library.  The study involves two 
-studies.  The first is a simple unit test example which tests a simple adder function and examines Mocha and Chai, how they are used, and the process of making
-a simplified unit test.  The second example deals with a more expanded test involving a "fizzbuzzer" function that replaces strings of text for numerical values 
-and features edge case testing as well.
+"Unit Testing with Mocha and Chai Study" is an exploration of software testing, using the Mocha framework and Chai assertion library.  For the purpose of this study, I divided the study into two examples.  The first "isEqual" example explores basic unit test implementation with Mocha and Chai using a simple adder function.  You will find this example below in this doucment which goes step-by-step through the development process, npm package installations, etc. The second example deals with more intricate tests involving a "fizzbuzzer" function that replaces strings of text for numerical values and edge case testing.
 
 ## What are software tests and why use them?
 A *software test* is a routine that runs the subject under test (i.e. the testing code) and determines if the code tested conforms to 
