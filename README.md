@@ -1,7 +1,13 @@
 # Unit Testing with Mocha and Chai Study
 
-* [Git Bash Checklist](#Git-Bash-Checklist)
-   * [What is Mocha?](#What-is-Mocha)
+* [What is Unit Testing with Mocha and Chai Study?](#What-is-Unit-Testing-with-Mocha-and-Chai-Study)
+* [Mocha in context: What are software test and why use them?](#Mocha-in-context:-What-are-software-test-and-why-use-them)
+* [What is Mocha?](#What-is-Mocha)
+* [How do you install Mocha and use Mocha?](#How-do-you-install-Mocha-and-use-Mocha)
+   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
+   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
+   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
+   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
 
 
 <br>
