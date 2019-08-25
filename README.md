@@ -6,9 +6,13 @@
 * [How do you install Mocha and use Mocha?](#How-do-you-install-Mocha-and-use-Mocha)
    * [STEP 1: Installing Mocha](#STEP-1-Installing-Mocha)
    * [STEP 2: Create a "test" file](#STEP-2-Create-a-test-file)
-   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
-   * [STEP 1: Installing Mocha](#STEP-1:-Installing-Mocha)
-
+   * [STEP 3: Load the subject under test to your test file](#STEP-3-Load-the-subject-under-test-to-your-test-file)
+   * [STEP 4: Create a test suite with "describe" and "it" for behaviors to test](#STEP-4-Create-a-test-suite-with-describe-and-it-for-behaviors-to-test)
+* [What is Chai and how do you use in it conjunction with Mocha?](#What-is-Chai-and-how-do-you-use-in-it-conjunction-with-Mocha)      
+   * [STEP 5: Install the chai dependency](#STEP-5-Install-the-chai-dependency)
+   * [STEP 6: Require chai in your test file](#STEP-6-Require-chai-in-your-test-file)
+   * [STEP 7: Use "expect" to test the code inside your unit tests](#STEP-7-Use-expect-to-test-the-code-inside-your-unit-tests)
+   * [STEP 8: Run your test!](#STEP-8-Run-your-test)
 
 <br>
 
